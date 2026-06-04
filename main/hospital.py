@@ -1,4 +1,4 @@
-
+from datetime import datetime
 
 class Patient:
     def __init__(self, unique_patient_id, name, age, disease):
@@ -35,6 +35,7 @@ class Patient:
             print("Date    :", visit['date'])
             print("Medicine:", visit['medicine'])
             print("Bill    :", visit['bill'])
+            print("date time:",datetime.now())
 
 
             print('----------------')
@@ -81,6 +82,7 @@ class HospitalSystem:
             print(f'doctor: {doctor.name}')
             print(f'date: {date}')
             print(f'time: {time}')
+            print(datetime.now())
 
 
             # doctor.available._slots.remove(time)
@@ -107,6 +109,7 @@ class Bill:
         print('doctor:', self.doctor_fee)
         print('medicine:', self.medicine_charge)
         print('lab:', self.lab_charge)
+        print(datetime.now())
 
 
 # patient
